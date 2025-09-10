@@ -55,14 +55,7 @@ text
 @reboot sleep 60 && /usr/local/bin/dailyupkeep >> /var/log/dailyupkeep.log 2>&1
 Cron Schedule Format
 text
-* * * * *  command
-│ │ │ │ │
-│ │ │ │ └─── Day of week (0-7, Sunday = 0 or 7)
-│ │ │ └───── Month (1-12)
-│ │ └─────── Day of month (1-31)
-│ └───────── Hour (0-23)
-└─────────── Minute (0-59)
-Common Schedule Examples
+![Cron EX](screenshots/cronex.png)
 bash
 # Daily at 2:00 AM
 0 2 * * * /usr/local/bin/dailyupkeep
